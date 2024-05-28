@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next + React Query로 SNS 서비스 만들기
 
-## Getting Started
+리액트18 & 넥스트14 & 리액트쿼리5 & Next Auth5 & MSW2 & socket.io4 & zustand 스택
 
-First, run the development server:
+- Next.js App Router를 기본으로 사용
+- Server Action과 같은 Next 14 기능
+- React Query로 인피니트 스크롤링, 데이터 캐싱, 옵티미스틱 업데이트, 롤백 등을 구현
+- 웹소켓 + react-query로 실시간 채팅을 구현
+- Zustand로 Context API를 대체
+- MSW로 가짜 API 서버 만들기
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+https://github.com/ZeroCho/next-app-router-z
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# app router 도입 이유
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- pages router의 구조상 기존 문제를 개선할 수 없었기에 새로 도입
+- 디렉토리 기능
+- 공통 레이아웃 기능 사용 가능
+- 페이지별 권한 체크 (어드민/로그인 유저 등) → app router 미들 웨어로 가능
+- react 18 버전 사용 → 서버 컴포넌트 적극 활용
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+💡 **`서버 컴포넌트`**
 
-## Learn More
+next 서버에서 리액트를 미리 렌더링해서 프론트 혹은 브라우저, 클라언트로 데이터를 보내줄 때 완성된 HTML을 미리 보내주는 것
 
-To learn more about Next.js, take a look at the following resources:
+**`장점`** HTML 로딩 시간, JS 용량 감소
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**`단점`** Next 서버 자체의 부담 증가 → 이에 따라 ‘캐시’ 적극 활용
