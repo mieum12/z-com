@@ -7,7 +7,6 @@ type Props = { children: React.ReactNode, modal: React.ReactNode }
 export default async function BeforeLoginLayout({ children, modal }: Props) {
     return (
         <div className={styles.container}>
-            before login 레이아웃
             {children}
             {modal}
         </div>

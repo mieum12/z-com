@@ -1,7 +1,7 @@
 // import { redirect } from "next/navigation";
 
-// export default function Login() {
-//     redirect('/i/flow/login')
+// export default function Signup() {
+//     redirect('/i/flow/signup')
 // }
 
 "use client";
@@ -9,9 +9,9 @@
 import {useRouter} from "next/navigation";
 import Main from "../_components/Main";
 
-export default function Login() {
+export default function Signup() {
   const router = useRouter();
-  router.replace('/i/flow/login');
+  router.replace('/i/flow/signup');
   return (
     <Main/>
   );

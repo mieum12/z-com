@@ -1,5 +1,10 @@
-export default function Signin() {
+import SignupModal from "@/app/(beforeLogin)/_components/SignupModal";
+
+export default function Signup() {
     return (
-        <main>회원가입 팝업</main>
+        <div>
+          그냥 I
+          <SignupModal/>
+        </div>
     )
 }
