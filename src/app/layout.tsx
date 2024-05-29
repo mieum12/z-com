@@ -10,13 +10,15 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
+  children
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>루트 레이아웃{children}</body>
+      <body className={inter.className}>
+            {children}
+      </body>
     </html>
   );
 }

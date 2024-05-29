@@ -33,3 +33,40 @@ next 서버에서 리액트를 미리 렌더링해서 프론트 혹은 브라우
 디렉토리 이름 중 소괄호로 된 부분은 주소 이름에 관여하지 않음
 
 폴더 주소는 app/(afterLogin)/home 이어도 브라우저에서는 /home이다
+
+
+### 스타일 선택
+
+tailwind - 호불호가 심하고 가독성이 떨어짐
+
+styled component - Server Component SSR
+
+emotion - next.js와는 잘 안맞음
+
+sass
+
+css module - sass 할 바에 간단하게 가자
+
+vanila extract - 요즘 뜨는 것, windows와 문제
+
+### 단위
+
+dvw, dvh - 전체화면을 채울 수 있는 ex. 100dvw
+
+100%로 하면 되지 않나?
+
+요즘 모바일에서 주소창이 생겼다 없어졌다하며 레이아웃이 틀어지는 경우가 많은데
+
+dvw, dvh는 그것과 무관하게 전체 화면을 채울 수 있다
+
+### Parallel Routes & Intercepting Routes
+
+- Parallel Routes
+
+2개의 화면을 힌 페이지에 같이 띄울 수 있음
+
+페이지 하나가 바탕이 되고 클릭 시 모달이 뜨는 것 처럼 되지만 주소는 바뀐 상태
+
+@로 시작하는 디렉토리를 만들어 사용
+
+@안에 있는 page.tsx와 홈 page.tsx가 패러렐하게 떠야한다면 같은 `(beforeLogin)`이라는 폴더 안에 존재해야한다
