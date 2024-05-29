@@ -14,4 +14,5 @@ export default async function BeforeLoginLayout({ children, modal }: Props) {
     )
 }
 
-// RootLayout -> HomeLayout -> Home
+// 주소가 localhost:3000 일때는 children -> page.tsx이고 modal -> @modal/default.tsx
+// 주소가 localhost:3000/i/flow/login 일때는 children -> i/flow/login/page.tsx이고 modal -> @modal/i/flow/login/page.tsx
