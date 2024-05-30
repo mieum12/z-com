@@ -74,6 +74,8 @@ dvw, dvh는 그것과 무관하게 전체 화면을 채울 수 있다
 
 @안에 있는 page.tsx와 홈 page.tsx가 패러렐하게 떠야한다면 같은 `(beforeLogin)`이라는 폴더 안에 존재해야한다
 
+레이아웃에 모달 자리 잊지 말기!
+
 - Intercepting Routes
 
 서로 주소가 다른데 같은 페이지에서 뜰 수 있게 함
