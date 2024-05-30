@@ -1,7 +1,15 @@
+'use client'
+
+import { usePathname } from 'next/navigation';
 import Trend from './Trend';
 import style from './trendSection.module.css';
 
 export default function TrendSection() {
+
+  // 탐색하기에서는 나를 위한 트렌드 숨기기
+  const pathname = usePathname();
+  if (pathname === '/explore') return null;
+
   return (
     <div className={style.trendBg}>
       <div className={style.trend}>
