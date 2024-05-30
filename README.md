@@ -113,3 +113,9 @@ useSelectedLayoutSegment()는 클라이언트 컴포넌트에서 사용되는 �
 Active Link란 - 현재 표시 중인 링크의 아이콘이 강조 표시하는 기능
 
 useSelectedLayoutSegment()를 이용해 segment를 가져와 segment와 일치하는 Active Link를 강조해서 보여줌
+
+## 사용 라이브러리
+
+- dayjs
+
+- classnames : 조건마다 클래스를 합성할 때 사용
