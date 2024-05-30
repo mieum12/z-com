@@ -6,8 +6,8 @@ export default function FollowRecommend() {
   const onFollow = () => {};
 
   const user = {
-    id: 'elonmusk',
-    nickname: 'Elon Musk',
+    id: 'mmochi',
+    nickname: 'mo-chi',
     image: '/profile.jpg'
   };
 
