@@ -10,21 +10,26 @@
   background-color: #fff;
   text-align: left;
 }
+
 .logOutButton:hover {
-  background-color: rgba(15,20,25, 0.1);
+  background-color: rgba(15, 20, 25, 0.1);
   border-radius: 33px;
 }
+
 .logOutUserImage {
   display: flex;
   align-items: center;
 }
+
 .logOutUserImage img {
   width: 40px;
   border-radius: 50%;
 }
+
 .logOutUserName {
   margin: 0 12px;
 }
-.logOutUserName > div:first-child {
+
+.logOutUserName>div:first-child {
   font-weight: bold;
 }

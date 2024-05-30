@@ -5,6 +5,8 @@ import Image from "next/image";
 import ZLogo from '../../../public/zlogo.png';
 import NavMenu from "./_components/NavMenu";
 import LogoutButton from "./_components/LogoutButton";
+import TrendSection from "./_components/TrendSection";
+import FollowRecommend from "./_components/FollowRecommend";
 
 export default function AfterLoginLayout({ children }: { children: ReactNode }) {
   return (
@@ -42,12 +44,14 @@ export default function AfterLoginLayout({ children }: { children: ReactNode }) 
                 <input type="search" />
               </form>
             </div>
-            {/* <TrendSection /> */}
+            <TrendSection />
+
+            {/* FollowSection으로 안묶고 일단 이곳에 풀어서 써볼게요 */}
             <div className={style.followRecommend}>
               <h3>팔로우 추천</h3>
-              {/* <FollowRecommend />
               <FollowRecommend />
-              <FollowRecommend /> */}
+              <FollowRecommend />
+              <FollowRecommend />
             </div>
           </section>
         </div>
