@@ -1,6 +1,6 @@
 import style from "./rightSearchZone.module.css"
 
-export default function SearchForm() {
+export default function SearchForm({q} : {q?: string}) { // q는 옵셔널 = 필수아님
   return(
     <form className={style.search}>
       <svg width={20} viewBox="0 0 24 24" aria-hidden="true">
