@@ -101,3 +101,15 @@ dvw, dvh는 그것과 무관하게 전체 화면을 채울 수 있다
 폴더 정리용이다
 
 예를 들면 인터셉팅 라우트의 내용과 원래 페이지의 내용(즉 뒷페이지만 제외한 모달의 형태)은 같아야하니까 파일이 중복된다
+
+### 📍 useSelectedLayoutSegment를 사용해 엑티브 링크 생성
+
+useSelectedLayoutSegment()는 클라이언트 컴포넌트에서 사용되는 훅
+
+호출된 레이아웃보다 한 수준 아래에 있는 segment를 반환
+
+(home 페이지는 호출된 레이아웃과 같은 수준에 있으므로 segment는 null)
+
+Active Link란 - 현재 표시 중인 링크의 아이콘이 강조 표시하는 기능
+
+useSelectedLayoutSegment()를 이용해 segment를 가져와 segment와 일치하는 Active Link를 강조해서 보여줌
