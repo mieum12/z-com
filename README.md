@@ -116,8 +116,16 @@ Active Link란 - 현재 표시 중인 링크의 아이콘이 강조 표시하는
 
 useSelectedLayoutSegment()를 이용해 segment를 가져와 segment와 일치하는 Active Link를 강조해서 보여줌
 
-## 사용 라이브러리
+### 📍 사용 라이브러리
 
 - dayjs
 
 - classnames : 조건마다 클래스를 합성할 때 사용
+
+### 📍 onClickCapture
+
+클릭 이벤트랑 a 태그랑 겹치는 경우에 사용
+
+id 눌렀을때는 id 프로필로, 게시글 내용을 눌렀을때는 게시글 상세 페이지로 이동
+
+(원래는 id 눌러도 게시글 상세로 이동했다)

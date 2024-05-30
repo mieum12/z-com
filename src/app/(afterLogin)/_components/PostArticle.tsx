@@ -27,7 +27,7 @@ export default function PostArticle({children, post}: Props) {
   }
 
   return(
-    <article className={style.post} onClick={onclick}>
+    <article className={style.post} onClickCapture={onclick}>
       {children}
     </article>
   )
